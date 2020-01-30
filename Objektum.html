@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript">
+            
+           function ember(nev, kor){
+               this.nev = nev;
+               this.kor = kor;
+               this.nyugdij = nyugdijig;
+           }
+
+           function nyugdijig(){
+               var x = 65-this.kor;
+               return x;
+           } 
+            var peti = new ember("Rugáber Péter", 37);
+            var zsofi = new ember("Zsófi", 30);
+            //ember = {nev: 'Rugáber Peti', kor: 37};
+
+        </script>
+    </head>
+    <body>
+        <script type = "text/javascript">
+            document.write(peti.nyugdij());
+        </script>
+    </body>
+</html>

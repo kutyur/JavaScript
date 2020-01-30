@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript">
+            var ures = new Array();
+            var tomb = new Array('Alma', 'Banán', 'Füge', 'Citrom');
+            /*document.write('A tömb 1. eleme: ', tomb[0], '<br/>');
+            document.write('A tömb elemszáma: ', tomb.length, '<br/>');
+            document.write('A tömb utolsó eleme: ', tomb[tomb.length-1], '<br/>');*/
+
+            tomb.push('Málna');
+            document.write(tomb[4], '<br/>');
+            tomb.pop();
+            document.write(tomb[4]);
+
+            tomb.unshift('Ribizli');
+            document.write(tomb[0], '<br/>');
+
+            tomb.shift();
+            document.write(tomb[0], '<br/>');
+
+            //Keresés
+            //document.write(tomb.indexOf('Banán'), '<br/>');
+            document.write(tomb.lastindexOf('Banán'), '<br/>');
+
+
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

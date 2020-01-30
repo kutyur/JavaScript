@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript">
+        function prime(){
+            var x = prompt("Addj meg egy egész számot!");
+            if(isFinite(x) && Math.floor(x) ==x){
+                if(eldont(x)){
+                    alert('A szám prím!');
+                }else {
+                    alert('A szám nem prím!');
+            }
+            }else{
+                alert('Egész számot addj meg!');
+               
+            }
+        } 
+
+        function eldont(x){
+            var i = 2;
+            while(i<=Math.floor(Math.sqrt(x)) && x%i !=0){
+                ++i;
+            }
+            return i>Math.floor(Math.sqrt(x));
+        }   
+            
+
+        </script>
+    </head>
+    <body>
+        <input type = "button" value = "Prim!" noClick = "prime()" />
+    </body>
+</html>

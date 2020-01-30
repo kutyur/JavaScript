@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Big Corporation",
+        "alkalmazottak szama": 10000,
+        "vezeto": "Peti",
+        "arany": 4
+    },
+    {
+        "name": "Kis ceg",
+        "alkalmazottak szama":5,
+        "vezeto": null,
+        "arany":5
+    }
+
+]

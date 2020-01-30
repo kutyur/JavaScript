@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        /*function getLength(){
+            var x = document.forms[0].length;
+            return x;
+        }*/
+
+        function elfogad() {
+            if (document.forms[0].doboz.checked) {
+                return "Köszönjük, hogy elfogadta a szerződési feltételeket!";
+            } else {
+                return "El kell fogadnia a szerződési feltételeket!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <!--Felhasználónév: <input type = "text" />
+            Jelszó: <input type = "password" />
+            <input type = "submit" value = "Submit!" />-->
+        Elfogadod a felhasználói feltételeket? <input type="checkbox" name="doboz" /> <br />
+        <input type="button" value="Beküld!" onClick="alert(elfogad());" />
+
+
+    </form>
+    <script type="text/javascript">
+        document.write(getLength());
+    </script>
+</body>
+
+</html>
